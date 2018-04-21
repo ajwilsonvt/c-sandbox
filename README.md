@@ -22,7 +22,10 @@ object code = program.o = machine code not yet linked into complete program
 
 -> linker ->
 
-machine code
+binary executable = program = machine code + other options and attributes of
+the program
+
+object code & binary executable can be considered machine code
 
 ### generate assembly code
 
@@ -62,7 +65,7 @@ gdb -tui program
 (gdb) disass main
 ```
 
-# simpler way to view machine code
+### simpler way to view machine code
 
 ```
 # disassemble, view sections expected to contain instructions
