@@ -1,0 +1,44 @@
+
+program:	file format Mach-O 64-bit x86-64
+
+Disassembly of section __TEXT,__text:
+__text:
+100000f60:	55 	pushq	%rbp
+100000f61:	48 89 e5 	movq	%rsp, %rbp
+100000f64:	48 83 ec 10 	subq	$16, %rsp
+100000f68:	48 8d 3d 3b 00 00 00 	leaq	59(%rip), %rdi
+100000f6f:	c7 45 fc 00 00 00 00 	movl	$0, -4(%rbp)
+100000f76:	b0 00 	movb	$0, %al
+100000f78:	e8 0d 00 00 00 	callq	13
+100000f7d:	31 c9 	xorl	%ecx, %ecx
+100000f7f:	89 45 f8 	movl	%eax, -8(%rbp)
+100000f82:	89 c8 	movl	%ecx, %eax
+100000f84:	48 83 c4 10 	addq	$16, %rsp
+100000f88:	5d 	popq	%rbp
+100000f89:	c3 	retq
+
+_main:
+100000f60:	55 	pushq	%rbp
+100000f61:	48 89 e5 	movq	%rsp, %rbp
+100000f64:	48 83 ec 10 	subq	$16, %rsp
+100000f68:	48 8d 3d 3b 00 00 00 	leaq	59(%rip), %rdi
+100000f6f:	c7 45 fc 00 00 00 00 	movl	$0, -4(%rbp)
+100000f76:	b0 00 	movb	$0, %al
+100000f78:	e8 0d 00 00 00 	callq	13
+100000f7d:	31 c9 	xorl	%ecx, %ecx
+100000f7f:	89 45 f8 	movl	%eax, -8(%rbp)
+100000f82:	89 c8 	movl	%ecx, %eax
+100000f84:	48 83 c4 10 	addq	$16, %rsp
+100000f88:	5d 	popq	%rbp
+100000f89:	c3 	retq
+Disassembly of section __TEXT,__stubs:
+__stubs:
+100000f8a:	ff 25 80 00 00 00 	jmpq	*128(%rip)
+Disassembly of section __TEXT,__stub_helper:
+__stub_helper:
+100000f90:	4c 8d 1d 71 00 00 00 	leaq	113(%rip), %r11
+100000f97:	41 53 	pushq	%r11
+100000f99:	ff 25 61 00 00 00 	jmpq	*97(%rip)
+100000f9f:	90 	nop
+100000fa0:	68 00 00 00 00 	pushq	$0
+100000fa5:	e9 e6 ff ff ff 	jmp	-26 <__stub_helper>
