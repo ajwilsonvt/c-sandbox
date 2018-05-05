@@ -41,8 +41,6 @@ clang -c program.c
 
 ### generate binary executable
 
-binary executable = machine code + other options and attributes of the program
-
 ```
 clang -o program program.c
 ```
