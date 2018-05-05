@@ -25,7 +25,7 @@ object code = program.o = machine code not yet linked into complete program
 binary executable = program = machine code + other options and attributes of
 the program
 
-object code & binary executable can be considered machine code
+**object code & binary executable can be considered machine code**
 
 ### generate assembly code
 
